@@ -13,6 +13,46 @@
     color: rgb(210, 250, 12);
 }
 
-/* .background {
-    background-color: #36454F;
-} */
+/* css for cards */
+
+.bg-card {
+    background-color: black;
+}
+
+/* css for all button */
+.button {
+    width: 80%;
+    border: none;
+    padding: 2% 1%;
+    color: white;
+    font-weight: 500;
+    background-color: #015196;
+}
+
+.button:hover {
+    background-color: #033d6f;
+}
+
+/* section-2 css */
+
+.calculate-button {
+    width: 60%;
+    border: none;
+    padding: 2% 1%;
+    color: white;
+    font-weight: 500;
+    background-color: #015196;
+}
+
+.calculate-button:hover {
+    background-color: #033d6f;
+}
+
+
+.total-color {
+    color: #FF5E19;
+}
+
+hr {
+    color: white
+}
