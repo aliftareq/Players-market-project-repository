@@ -30,52 +30,52 @@
                 <div class="container text-center">
                     <div class="row g-3">
                         <!-- card-1 -->
-                        <div class="col-4 p-0 border bg-card">
+                        <div class="col-4 p-0 border border-5 bg-card">
                             <div class="">
                                 <img class="w-100" src="./images/messi.jpg" alt="messi">
                             </div>
                             <div class="p-2 text-white">
-                                <h3>Lionel Messi</h3>
+                                <h3 id="messi-name">Lionel Messi</h3>
                                 <div class="d-flex justify-content-around">
                                     <p>36 Goals</p>
                                     <p>||</p>
                                     <p>120 Assist</p>
                                 </div>
-                                <button class="button">SELECT</button>
+                                <button id="btn-messi" class="button">SELECT</button>
                             </div>
                         </div>
                         <!-- card-2 -->
-                        <div class="col-4 p-0 border bg-card">
+                        <div class="col-4 p-0 border border-5 bg-card">
                             <div class="">
                                 <img class="w-100" src="./images/neymar.jpg" alt="neymar">
                             </div>
                             <div class="p-2 text-white">
-                                <h3>Neymar Jr.</h3>
+                                <h3 id="neymar-name">Neymar Jr.</h3>
                                 <div class="d-flex justify-content-around">
                                     <p>27 Goals</p>
                                     <p>||</p>
                                     <p>90 Assist</p>
                                 </div>
-                                <button class="button">SELECT</button>
+                                <button id="btn-neymar" class="button">SELECT</button>
                             </div>
                         </div>
                         <!-- card-3 -->
-                        <div class="col-4 p-0 border bg-card">
+                        <div class="col-4 p-0 border border-5 bg-card">
                             <div class="">
                                 <img class="w-100" src="./images/de-maria.jpg" alt="messi">
                             </div>
                             <div class="p-2 text-white">
-                                <h3>Angelo D-maria</h3>
+                                <h3 id="d-Maria-Name">Angelo D-maria</h3>
                                 <div class="d-flex justify-content-around">
                                     <p>25 Goals</p>
                                     <p>||</p>
                                     <p>95 Assist</p>
                                 </div>
-                                <button class="button">SELECT</button>
+                                <button id="btn-D-maria" class="button">SELECT</button>
                             </div>
                         </div>
                         <!-- card-4 -->
-                        <div class="col-4 p-0 border bg-card">
+                        <div class="col-4 p-0 border border-5 bg-card">
                             <div class="">
                                 <img class="w-100" src="./images/leipzig-hakimi.jpg" alt="messi">
                             </div>
@@ -86,11 +86,11 @@
                                     <p>||</p>
                                     <p>70 Assist</p>
                                 </div>
-                                <button class="button">SELECT</button>
+                                <button id="btn-hakimi" class="button">SELECT</button>
                             </div>
                         </div>
                         <!-- card-5 -->
-                        <div class="col-4 p-0 border bg-card">
+                        <div class="col-4 p-0 border border-5 bg-card">
                             <div class="">
                                 <img class="w-100" src="./images/renato sanches.jpg" alt="messi">
                             </div>
@@ -105,7 +105,7 @@
                             </div>
                         </div>
                         <!-- card-6 -->
-                        <div class="col-4 p-0 border bg-card">
+                        <div class="col-4 p-0 border border-5 bg-card">
                             <div class="">
                                 <img class="w-100" src="./images/donarumma.jpg" alt="messi">
                             </div>
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                         <!-- card-7 -->
-                        <div class="col-4 p-0 border bg-card">
+                        <div class="col-4 p-0 border border-5 bg-card">
                             <div class="">
                                 <img class="w-100" src="./images/sergio ramos.jpg" alt="messi">
                             </div>
@@ -135,7 +135,7 @@
                             </div>
                         </div>
                         <!-- card-8 -->
-                        <div class="col-4 p-0 border bg-card">
+                        <div class="col-4 p-0 border border-5 bg-card">
                             <div class="">
                                 <img class="w-100" src="./images/victor machado.jpg" alt="messi">
                             </div>
@@ -150,7 +150,7 @@
                             </div>
                         </div>
                         <!-- card-9 -->
-                        <div class="col-4 p-0 border bg-card">
+                        <div class="col-4 p-0 border border-5 bg-card">
                             <div class="">
                                 <img class="w-100" src="./images/mbappe.jpg" alt="messi">
                             </div>
@@ -175,12 +175,7 @@
                         <div class="col-12 bg-card py-3 px-4 text-white">
                             <h3>Selected-V</h3>
                             <hr>
-                            <ol>
-                                <li>player-1</li>
-                                <li>player-1</li>
-                                <li>player-1</li>
-                                <li>player-1</li>
-                                <li>player-1</li>
+                            <ol id="ol-list">
                             </ol>
                         </div>
                         <div class="col-12 bg-card py-3 px-4 text-white mt-3">
@@ -189,7 +184,7 @@
                             <!-- per player input section -->
                             <div class="d-flex justify-content-between">
                                 <p class="d-inline font fw-semibold">Per Player:</p>
-                                <input class="d-inline text-primary" type="text" name="" id="">
+                                <input class="d-inline text-primary" type="text" name="" id="per-player">
                             </div>
                             <!-- calculate button -->
                             <div class="my-2">
@@ -198,7 +193,7 @@
                             <!-- player expenses div -->
                             <div class="d-flex justify-content-around">
                                 <h5>Player expenses:</h5>
-                                <h5 class="total-color">$<span>5000</span></h5>
+                                <h5 class="total-color">$<span id="player-Expenses">0</span></h5>
                             </div>
                             <!-- manger and Coach input field -->
                             <div class="d-flex justify-content-between my-2">
@@ -216,7 +211,7 @@
                             <!-- total expenses -->
                             <div class="d-flex justify-content-around">
                                 <h5>Total Expenses:</h5>
-                                <h5 class="total-color">$<span>11,000</span></h5>
+                                <h5 class="total-color">$<span>0</span></h5>
                             </div>
                         </div>
                     </div>
@@ -237,6 +232,8 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <!-- apps JS files -->
+    <script src="./JsFiles/utilities.js"></script>
+    <script src="./JsFiles/app.js"></script>
 
 </body>
 
