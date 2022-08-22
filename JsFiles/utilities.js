@@ -26,7 +26,15 @@ function setTextElementById(elementId, value) {
     element.innerText = value;
 }
 
-// 4. add player dynamic function
+// 4. get TextElements TextValue by id....
+
+function getTextElementTextValueById(elementId) {
+    const element = document.getElementById(elementId);
+    elementTextValue = element.innerText
+    return elementTextValue;
+}
+
+// 5. add player dynamic function
 
 function addPlayer(value, btnName) {
     // determining the number of list
@@ -51,10 +59,3 @@ function addPlayer(value, btnName) {
     }
 }
 
-// 5. get TextElements TextValue by id....
-
-function getTextElementTextValueById(elementId) {
-    const element = document.getElementById(elementId);
-    elementTextValue = element.innerText
-    return elementTextValue;
-}

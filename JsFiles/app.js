@@ -59,3 +59,47 @@ document.getElementById('btn-mbappe').addEventListener('click', function () {
 
 
 /*------------------------------------Event handlers for calculation---------------------------------------*/
+
+//Event handler for calculate button
+
+document.getElementById('btn-calculate').addEventListener('click', function () {
+    // determining the number of players
+    const liArray = document.querySelectorAll('li')
+    const numberOfPlayers = liArray.length;
+
+    // getting the value of per player cost
+    const perPlayerCost = getInputFieldValueById('per-player');
+
+    if (isNaN(perPlayerCost)) {
+        alert('Your Input is not valid. Please try again with numbers.')
+        return;
+    }
+    else {
+        //calculating player expense
+        const playerExpense = numberOfPlayers * perPlayerCost;
+
+        // setting the player Expenses
+        setTextElementById('player-Expenses', playerExpense);
+    }
+})
+
+
+document.getElementById('btn-calculate-total').addEventListener('click', function () {
+    // getting player Expenses
+    const playerExpense = getTextElementValueById('player-Expenses');
+
+    // getting manager and coach expense
+    const managerExpense = getInputFieldValueById('manager-expense');
+    const coachExpense = getInputFieldValueById('coach-expense');
+
+    if (isNaN(playerExpense) || isNaN(managerExpense) || isNaN(coachExpense)) {
+        alert('One of your input value is Invalid. Please, try again with numbers.')
+    }
+    else {
+        // determining the total expense
+        const totalExpense = playerExpense + managerExpense + coachExpense;
+
+        //set the determined value.
+        setTextElementById('total-Expense', totalExpense);
+    }
+})
