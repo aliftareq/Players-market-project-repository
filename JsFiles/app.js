@@ -70,6 +70,7 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     // getting the value of per player cost
     const perPlayerCost = getInputFieldValueById('per-player');
 
+    // validation for per player cost
     if (isNaN(perPlayerCost)) {
         alert('Your Input is not valid. Please try again with numbers.')
         return;
@@ -92,6 +93,7 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const managerExpense = getInputFieldValueById('manager-expense');
     const coachExpense = getInputFieldValueById('coach-expense');
 
+    //validation for total cost.
     if (isNaN(playerExpense) || isNaN(managerExpense) || isNaN(coachExpense)) {
         alert('One of your input value is Invalid. Please, try again with numbers.')
     }

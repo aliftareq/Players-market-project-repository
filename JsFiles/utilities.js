@@ -27,7 +27,6 @@ function setTextElementById(elementId, value) {
 }
 
 // 4. get TextElements TextValue by id....
-
 function getTextElementTextValueById(elementId) {
     const element = document.getElementById(elementId);
     elementTextValue = element.innerText
@@ -35,7 +34,6 @@ function getTextElementTextValueById(elementId) {
 }
 
 // 5. add player dynamic function
-
 function addPlayer(value, btnName) {
     // determining the number of list
     const liArray = document.querySelectorAll('li')
