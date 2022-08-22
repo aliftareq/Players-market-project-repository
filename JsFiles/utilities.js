@@ -28,21 +28,30 @@ function setTextElementById(elementId, value) {
 
 // 4. add player dynamic function
 
-function addPlayer(value) {
+function addPlayer(value, btnName) {
+    // determining the number of list
     const liArray = document.querySelectorAll('li')
     const liNumbers = liArray.length;
+    // checking the number of list
     if (liNumbers < 5) {
+        // creating li and appending it to ol
         const olList = document.getElementById('ol-list')
         const li = document.createElement('li')
         li.innerText = value;
         olList.append(li)
+
+        // disabling the button if its have been clicked
+        const playerButton = document.getElementById(btnName);
+        playerButton.setAttribute('disabled', true);
+        playerButton.style.backgroundColor = 'grey';
     }
     else {
-        alert('you can not add more than 5 Players')
+        alert('You can not add more than 5 players!!!')
+        return;
     }
 }
 
-// 5. getTextElementTextValue by id
+// 5. get TextElements TextValue by id....
 
 function getTextElementTextValueById(elementId) {
     const element = document.getElementById(elementId);
